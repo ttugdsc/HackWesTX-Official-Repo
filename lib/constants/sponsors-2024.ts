@@ -1,10 +1,9 @@
-import nextier from "../../assets/sponsors/NexTier_OFS.png"
-import tcl from "../../assets/sponsors/TacticalComputingLabs.png"
-import mlt from "../../assets/sponsors/logo-mlt.png"
-import standout from "../../assets/sponsors/stand-out-stickers-logo.png"
-import ihub from "../../assets/sponsors/innovationHub.png"
-import mlh from "../../assets/sponsors/mlh-logo-color.png"
-import pten from "../../assets/sponsors/patterson.png"
+import tcl from "../../assets/sponsors/TacticalComputingLabs.png";
+import ihub from "../../assets/sponsors/innovationHub.png";
+import mlt from "../../assets/sponsors/logo-mlt.png";
+import mlh from "../../assets/sponsors/mlh-logo-color.png";
+import pten from "../../assets/sponsors/patterson.png";
+import standout from "../../assets/sponsors/stand-out-stickers-logo.png";
 
 const sponsors2024 = [
     {
@@ -24,11 +23,6 @@ const sponsors2024 = [
         link: "https://mlt.org/"
     },
     {
-        name: "Innovation Hub",
-        avatarSrc: ihub,
-        link: "https://www.depts.ttu.edu/research/research-park/"
-    },
-    {
         name: "Major League Hacking",
         avatarSrc: mlh,
         link: "https://mlh.io/"
@@ -37,6 +31,11 @@ const sponsors2024 = [
         name: "Standout Stickers",
         avatarSrc: standout,
         link: "https://www.standoutstickers.com/"
+    },
+    {
+        name: "Innovation Hub",
+        avatarSrc: ihub,
+        link: "https://www.depts.ttu.edu/research/research-park/"
     },
 ]
 

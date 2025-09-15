@@ -7,9 +7,9 @@ import {
   useTheme,
 } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../../assets/icons/screen.svg";
 import styles from "../../styles/Home.module.css";
-import Link from "next/link";
 
 const Jumbotron = () => {
   const theme = useTheme();
@@ -70,7 +70,7 @@ const Jumbotron = () => {
             mt={{ md: 4 }}
             className={styles.glitch}
           >
-            September 14th - September 15th
+            {/* September 14th - September 15th */}
           </Typography>
           <Typography
             variant="h5"
@@ -87,25 +87,29 @@ const Jumbotron = () => {
             }}
           >
             <Button
-              disableRipple={true}
-              href=""
+              disableRipple
               variant="contained"
               color="success"
               size="large"
-              // onClick={() => popup('hackwestx-fall-2023-424424')}
+              fullWidth
               sx={{
                 color: theme.palette.success.contrastText,
                 my: 4,
+                maxWidth: 500,
                 mx: "auto",
                 borderRadius: 10,
+                display: "block",
+                fontSize: "1.5rem",
+                fontWeight: 700,
                 "&.MuiButtonBase-root:hover": {
                   bgcolor: "#2e7d32",
-                  cursor: "default"
+                  cursor: "pointer"
                 }
               }}
             >
-             <Link href={'/2024'}>Visit HackWesTX 2024 Website</Link> 
-
+              <Link href="/2025" style={{ color: "inherit", textDecoration: "none", width: "100%", display: "block", textAlign: "center" }}>
+                Visit HackWesTX 2025 Website
+              </Link>
             </Button>
           </Box>
         </Container>

@@ -12,27 +12,25 @@ import Link from "next/link";
 
 import sponsor_tacticalLabs from "../assets/sponsors/TacticalComputingLabs.png";
 
-import sponsor_innovationHub from "../assets/sponsors/innovationHub.png";
 import sponsor_acmChapter from "../assets/sponsors/acm-logo.png";
-import sponsor_quext from "../assets/sponsors/Quext.png";
-import sponsor_NexTier from "../assets/sponsors/NexTier_OFS.png";
-import sponsor_TRUE from "../assets/sponsors/true.png";
 import sponsor_codePath from "../assets/sponsors/codepath.png";
-import sponsor_VRVizio from "../assets/sponsors/VRVizio.png";
-import sponsor_Mathworks from "../assets/sponsors/mathworks.png";
 import sponsor_Dell from "../assets/sponsors/Dell.png";
+import sponsor_innovationHub from "../assets/sponsors/innovationHub.png";
+import sponsor_Mathworks from "../assets/sponsors/mathworks.png";
+import sponsor_NexTier from "../assets/sponsors/NexTier_OFS.png";
+import sponsor_quext from "../assets/sponsors/Quext.png";
+import sponsor_TRUE from "../assets/sponsors/true.png";
+import sponsor_VRVizio from "../assets/sponsors/VRVizio.png";
 
 
+import DiscordLogo from "../assets/icons/discord-512.webp";
+import InstagramLogo from "../assets/icons/insta-512.png";
 import FAQ from "../components/individual/FAQ";
-import HWTCountdown from "../components/individual/HWTCountdown";
 import Jumbotron from "../components/individual/Jumbotron";
-import OurTeam from "../components/individual/OurTeam";
 import Sponsorships from "../components/individual/Sponsorships";
 import StudentSlideshow from "../components/individual/StudentSlideshow";
 import { faq } from "../lib/constants/faq";
 import styles from "../styles/Home.module.css";
-import InstagramLogo from "../assets/icons/insta-512.png";
-import DiscordLogo from "../assets/icons/discord-512.webp"
 
 const HomePage = () => {
   const sxWidth = { xs: "50vw", sm: "50vw", amd: "45vw", lg: "30vw" };
@@ -41,7 +39,7 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Home | HackWesTX V</title>
+        <title>Home | HackWesTX</title>
         <meta name="description" content="Home of the HackWesTX Hackathon" />
       </Head>
 
@@ -69,10 +67,10 @@ const HomePage = () => {
 
               <Link
                 style={{ color: "#5865F2" }}
-                href="https://discord.com/invite/Y9wUhS5cKp"
+                href="https://discord.gg/yMGRnVuA"
               >
                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-                  <img style={{ marginRight: "10px" }} src={DiscordLogo.src} width="32" />
+                  <img style={{ marginRight: "10px" }} src={DiscordLogo.src} width="32" alt="Discord" />
                   <span className={styles.glitch} style={{ fontSize: "25px", display: "flex", flexDirection: "row", alignItems: "center" }} >JOIN OUR DISCORD</span>
                 </div>
               </Link>
@@ -82,7 +80,7 @@ const HomePage = () => {
                 href="https://instagram.com/hwtxofficial"
               >
                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-                  <img style={{ marginRight: "10px" }} src={InstagramLogo.src} width="32" />
+                  <img style={{ marginRight: "10px" }} src={InstagramLogo.src} width="32" alt="Instagram" />
                   <span style={{ display: "flex", flexDirection: "row", alignItems: "center" }} >Instagram</span>
                 </div>
               </Link>
@@ -117,9 +115,8 @@ const HomePage = () => {
                   overflowX: "none",
                 }}
               >
-                HackWesTX IV is Texas Tech University&apos;s fourth student-run
-                hackathon! This year, the hackathon will start Saturday,
-                September 14th and end Sunday, September 15th. The hackathon will
+                HackWesTX is Texas Tech University&apos;s student-run
+                hackathon! Please <Link href="/2025" style={{ textDecoration: "underline" }}>refer to the 2025 website</Link> for more details. The hackathon will
                 last 24 hours total!
               </Typography>
             </CardContent>
@@ -164,7 +161,7 @@ const HomePage = () => {
           </Card>
         </Grid>
         <Grid item xs={12} mt={10} px="auto">
-          <HWTCountdown />
+          {/* <HWTCountdown /> */}
         </Grid>
         <Grid item xs={12} height="80vh" display="flex" alignContent="center">
           <StudentSlideshow />
